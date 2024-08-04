@@ -9,6 +9,7 @@
 - special features:
     - added a frontend application
     - added win conditions
+    - added testing
 - trade-offs:
     - to simplify game logic the user always starts as 'X' and the computer as 'O'
     - the frontend application was made with the intention to showcase the api. it has very limited features.
@@ -19,6 +20,8 @@
     2. run `python manage.py migrate`
     3. run `python manage.py runserver`
     4. the backend server runs on **localhost:8000**
+
+    to run tests use `python manage.py test`
  ### Frontend
     1. go into the frontend/tic-tac-toe directory and run `npm install`
     2. run `npm start`
