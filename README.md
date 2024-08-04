@@ -14,12 +14,12 @@
     - the frontend application was made with the intention to showcase the api. it has very limited features.
 
 ## How to run
- ### backend
+ ### Backend
     1. go into the tictactoe directory (backend) and run `pip install requirements.txt` (you can create a venv before installing dependencies)
     2. run `python manage.py migrate`
     3. run `python manage.py runserver`
     4. the backend server runs on **localhost:8000**
- ### frontend
+ ### Frontend
     1. go into the frontend/tic-tac-toe directory and run `npm install`
     2. run `npm start`
     3. the frontend runs on **localhost:3000**
