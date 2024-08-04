@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/frontend/tic-tac-toe/node_modules
+/frontend/tic-tac-toe/.pnp
+/frontend/tic-tac-toe/.pnp.js
+
+# testing
+/frontend/tic-tac-toe/coverage
+
+# production
+/frontend/tic-tac-toe/build
+
+# misc
+/frontend/tic-tac-toe/.DS_Store
+/frontend/tic-tac-toe/.env.local
+/frontend/tic-tac-toe/.env.development.local
+/frontend/tic-tac-toe/.env.test.local
+/frontend/tic-tac-toe/.env.production.local
+
+/frontend/tic-tac-toe/npm-debug.log*
+/frontend/tic-tac-toe/yarn-debug.log*
+/frontend/tic-tac-toe/yarn-error.log*
+
+/env
+/tictactoe/db.sqlite3
