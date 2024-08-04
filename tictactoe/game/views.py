@@ -7,6 +7,7 @@ from .helpers import is_move_valid, make_move, check_winner
 
 
 class GameViewSet(viewsets.ModelViewSet):
+    # will list the games in descending order based on the timestamp
     queryset = Game.objects.all().order_by('-date')
     serializer_class = GameSerializer
 
@@ -25,11 +26,14 @@ class GameViewSet(viewsets.ModelViewSet):
 
         game.winner = 'X' if check_winner(game.board, 'X') else None
 
+        # will return None if there are no available moves
         bot_move = make_move(game.board)
 
+        # check if there is a draw
         if bot_move is None and game.winner is None:
             game.winner = 'Draw'
 
+        # the computer only makes a move if there are any available and there is no winner yet.
         if bot_move and game.winner is None:
             ax, ay = bot_move
             game.board[ax][ay] = 'O'
